@@ -408,10 +408,10 @@
       //- Título nivel 3 - Imagen
       p(data-aos="fade-left") La variable <b>resultado</b> es de tipo <b>String</b>, debido a que la actividad <b>Obtener texto</b> devuelve como texto el contenido capturado desde la aplicación <i>web</i>. Esta variable permite conservar el valor recuperado para utilizarlo posteriormente dentro del flujo. El flujo asociado con esta variable puede representarse mediante:
       .row.justify-content-center.mb-5(data-aos="fade-right")
-        .col-md-auto.col-lg-10
+        .col-md-auto.col-lg-6
           .titulo-sexto.color-acento-contenido.mb-3
             h5 Figura 7.
-            span Flujo de obtención y almacenamiento de texto desde una aplicación web
+            span Flujo de obtención y almacenamiento de texto desde una aplicación <i>web</i>
         figure.mb-0.text-center
             img.mx-auto(src='@/assets/curso/temas/t2/img11.png', alt='Diagrama de flujo para obtener información desde una aplicación <i>web</i>que conecta la aplicación con la actividad Obtener texto, recupera el contenido mediante TextString y lo almacena en la variable resultado para utilizarlo posteriormente en la automatización.', style="width: 400px;")
       //- Título nivel 3 - Imagen
@@ -585,7 +585,7 @@
         .col-md-auto.col-lg-5
           .titulo-sexto.color-acento-contenido.mb-3
             h5 Figura 10.
-            span Validación del resultado obtenido desde una aplicación web
+            span Validación del resultado obtenido desde una aplicación <i>web</i>
         figure.mb-0.text-center
             img.mx-auto(src='@/assets/curso/temas/t2/img15.png', alt='Diagrama de validación del resultado obtenido desde una aplicación <i>web</i> mediante una estructura If que comprueba si la variable resultado contiene información y dirige el flujo según se haya obtenido o no un valor de la conversión.', style="width: 500px;")
       //- Título nivel 3 - Imagen
@@ -616,13 +616,13 @@
         .col-12.col-sm-6.col-lg-4
           .bg-color-11.rounded-4.p-4.h-100.d-flex.flex-column.align-items-center
             figure.mb-4
-              img.mx-auto(src='@/assets/curso/temas/t2/tarjeta07_1.svg', alt='', style='max-width: 140px; width: 100%;')
+              img.mx-auto(src='@/assets/curso/temas/t2/tarjeta07_2.svg', alt='', style='max-width: 140px; width: 100%;')
             h4.fw-bold.mb-3 Condicionales
             p.mb-0 Permiten tomar decisiones de acuerdo con el cumplimiento de una condición. La ejecución continúa por una ruta u otra según el resultado obtenido.
         .col-12.col-sm-6.col-lg-4
           .bg-color-11.rounded-4.p-4.h-100.d-flex.flex-column.align-items-center
             figure.mb-4
-              img.mx-auto(src='@/assets/curso/temas/t2/tarjeta07_1.svg', alt='', style='max-width: 140px; width: 100%;')
+              img.mx-auto(src='@/assets/curso/temas/t2/tarjeta07_3.svg', alt='', style='max-width: 140px; width: 100%;')
             h4.fw-bold.mb-3 Ciclos
             p.mb-0 Permiten repetir actividades cuando es necesario procesar varios elementos o ejecutar una acción mientras se cumpla una condición determinada.
       p(data-aos="fade-left") En el caso de estudio, For Each se utiliza para recorrer los diferentes montos y If para validar que el resultado de la conversión haya sido obtenido antes de continuar con su procesamiento o registro.
@@ -690,7 +690,7 @@
               h4.mb-3.text-center rutaArchivo
               p.mb-0 String. Contiene la ruta del archivo de Excel utilizado para registrar los resultados generados durante la ejecución de la automatización.
       //- Fin Tarjetas
-      p(data-aos="fade-left") La variable resultado almacena la salida textual obtenida mediante la actividad <b>Obtener texto</b>. La variable <b>currentItem</b> permite recorrer los diferentes montos definidos en la colección del ciclo <b>For Each</b>, mientras que <b>rutaArchivo</b> permite identificar el archivo de Excel utilizado para registrar los resultados del proceso.
+      p(data-aos="fade-left") La variable <b>resultado</b> almacena la salida textual obtenida mediante la actividad <b>Obtener texto</b>. La variable <b>currentItem</b> permite recorrer los diferentes montos definidos en la colección del ciclo <b>For Each</b>, mientras que <b>rutaArchivo</b> permite identificar el archivo de Excel utilizado para registrar los resultados del proceso.
       //- Título nivel 3 - Imagen
       .titulo-tercer-nivel.mb-5.mt-3(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/titulos.svg')
@@ -840,7 +840,7 @@
         .col-12.col-sm-9.col-lg-4.order-1.order-lg-2.mb-4.mb-lg-0(data-aos="fade-right")
           figure.mb-0.text-center
             img.mx-auto(src='@/assets/curso/temas/t2/img23.png', alt='', style="width: 600px;")
-        .col-12.col-lg-8.order-2.order-lg-1.p-4(data-aos="fade-left")
+        .col-12.col-lg-8.order-2.order-lg-1(data-aos="fade-left")
           p Las pruebas aplicadas en esta etapa son <b>pruebas funcionales</b>, también denominadas <b>pruebas de caja negra</b>. Estas se centran en el comportamiento externo de la automatización, sin examinar la forma en que está construido internamente el flujo. Para ello, se proporcionan determinados datos de entrada, se ejecuta la automatización y se compara el resultado obtenido con el resultado esperado.
           p.mb-0 Este enfoque resulta pertinente porque la validación corresponde a la persona responsable del proceso y no exclusivamente a quien desarrolló el robot. El marco de referencia para estas actividades es la norma <b>ISO/IEC/IEEE 29119</b>, cuya parte 3 establece aspectos relacionados con la documentación de las pruebas y cuya parte 4 aborda técnicas para el diseño de casos de prueba. Para comprender el proceso de verificación, es necesario reconocer los siguientes conceptos:
       //- Slideshow

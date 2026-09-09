@@ -119,7 +119,7 @@
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/titulos.svg')
         h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Monitoreo de la ejecución
       //- Título nivel 3 - Imagen
-      p(data-aos="fade-left") El monitoreo permite comprobar el estado de los procesos y de sus ejecuciones. Durante una primera ejecución es conveniente verificar que el <b>Job</b> sea asignado correctamente al <b>Robot Account</b> y a la <b>Machine</b> configurada, y consultar su estado en <b>Orchestrator</b>.
+      p(data-aos="fade-left") El <b>monitoreo</b> permite comprobar el estado de los procesos y de sus ejecuciones. Durante una primera ejecución es conveniente verificar que el <b>Job</b> sea asignado correctamente al <b>Robot Account</b> y a la <b>Machine</b> configurada, y consultar su estado en <b>Orchestrator</b>.
       p(data-aos="fade-left") En el caso práctico, esta ejecución permite comprobar que el paquete sea instalado correctamente y que la automatización <b>cambiomoneda</b> pueda iniciarse mediante el robot desatendido.
       p(data-aos="fade-left") Para fortalecer la administración y el seguimiento de la automatización, se recomienda considerar las siguientes prácticas:
       //- Slideshow

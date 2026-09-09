@@ -176,26 +176,26 @@
           .pt-3.pb-5.px-5
             .row.justify-content-center.g-4.mb-4(data-aos="fade-up")              
               .col-12.col-md-4
-                .bg-color-8.p-4.h-100.d-flex.flex-column.align-items-center.text-center
+                .bg-color-8.p-4.h-100.d-flex.flex-column.align-items-center
                   h4.fw-bold.mb-3 UiPath Studio
                   figure.mb-3
                     img.mx-auto(src='@/assets/curso/temas/t1/tarjeta02_1.png', alt='', style='max-width: 250px; width: 100%;')
                   p.mb-0 Entorno en el que se diseñan y construyen las automatizaciones mediante actividades y flujos de trabajo. Permite estructurar las acciones que posteriormente ejecutará el robot de software.              
               .col-12.col-md-4
-                .bg-color-8.p-4.h-100.d-flex.flex-column.align-items-center.text-center
+                .bg-color-8.p-4.h-100.d-flex.flex-column.align-items-center
                   h4.fw-bold.mb-3 Robot
                   figure.mb-3
                     img.mx-auto(src='@/assets/curso/temas/t1/tarjeta02_2.png', alt='', style='max-width: 250px; width: 100%;')
                   p.mb-0 Componente encargado de ejecutar las instrucciones definidas en la automatización. Desarrolla las actividades configuradas en el flujo de trabajo de acuerdo con la secuencia establecida.
             .row.justify-content-center.g-4.mb-4(data-aos="fade-up")
               .col-12.col-md-4
-                .bg-color-8.p-4.h-100.d-flex.flex-column.align-items-center.text-center
+                .bg-color-8.p-4.h-100.d-flex.flex-column.align-items-center
                   h4.fw-bold.mb-3 Assistant
                   figure.mb-3
                     img.mx-auto(src='@/assets/curso/temas/t1/tarjeta02_3.png', alt='', style='max-width: 250px; width: 100%;')
                   p.mb-0 Aplicación que permite al usuario iniciar y gestionar las automatizaciones disponibles desde el equipo. Facilita el acceso a los procesos que han sido configurados para su ejecución.              
               .col-12.col-md-4
-                .bg-color-8.p-4.h-100.d-flex.flex-column.align-items-center.text-center
+                .bg-color-8.p-4.h-100.d-flex.flex-column.align-items-center
                   h4.fw-bold.mb-3 Orchestrator
                   figure.mb-3
                     img.mx-auto(src='@/assets/curso/temas/t1/tarjeta02_4.png', alt='', style='max-width: 250px; width: 100%;')
@@ -229,3 +229,4 @@ export default {
 </script>
 
 <style lang="sass"></style>
+
