@@ -19,379 +19,67 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
       titulo: 'Cuestionario',
-      introduccion:
-        '<b>Objetivo:</b> evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
+      introduccion: '<b>Objetivo:</b> XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
       barajarPreguntas: false,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
       preguntas: [
         {
           id: 1,
-          texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto:
-            'Lo sentimos, su respuesta no es la correcta. <em>Board</em> del <em>software</em> EAGLE.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 2,
-          texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
-          imagen: '@/assets/actividad/imagen1.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 4,
-          texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 6,
-          texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 7,
-          texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 8,
-          texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
-          imagen: '@/assets/actividad/imagen2.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 9,
-          texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
-          imagen: '@/assets/actividad/imagen3.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 10,
-          texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
-          imagen: '@/assets/actividad/imagen3.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 11,
-          texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
-          imagen: '@/assets/actividad/imagen3.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'bValues',
-              esCorrecta: false,
-            },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 12,
-          texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
-          imagen: '@/assets/actividad/imagen3.png',
-          barajarRespuestas: true,
-          opciones: [
-            {
-              id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
-              esCorrecta: false,
-            },
-            {
-              id: 'c',
-              texto: 'tStop',
-              esCorrecta: false,
-            },
-            {
-              id: 'd',
-              texto: 'bValues',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
           ],
@@ -400,29 +88,328 @@ export default {
         },
         {
           id: 13,
-          texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen3.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 4,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 5,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen1.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 6,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen2.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 7,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen3.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 8,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen4.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 9,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen1.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 10,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen2.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 11,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen3.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 12,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen4.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 13,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen1.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
           ],
@@ -431,29 +418,28 @@ export default {
         },
         {
           id: 14,
-          texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
-          imagen: '@/assets/actividad/imagen4.png',
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
           ],
@@ -462,29 +448,178 @@ export default {
         },
         {
           id: 15,
-          texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen3.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 16,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'bNames',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'tStop',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 17,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen1.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 18,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen2.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 19,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen3.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 20,
+          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          imagen: '@/assets/actividad/imagen4.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
               esCorrecta: false,
             },
           ],

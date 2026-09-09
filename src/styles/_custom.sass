@@ -1,15 +1,15 @@
 @use 'variables' as *
 .banner-principal-decorativo
-  &-1
+  &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 68%
-    left: -10%
-    width: 20%
-  &-2
+    top: 25%
+    left: 15%
+    width: 30%
+  &-1
     animation: float1 2.5s ease-in-out infinite alternate
     position: absolute
-    top: 30%
+    top: 50%
     right: 10%
     width: 20%
 
@@ -26,6 +26,63 @@
   padding-bottom: 0 !important
 .banner-principal__row .banner-principal__img
   width: 33%
+
+/**************************************************************/
+/***CUSTOM STYLES***/
+/**************************************************************/
+.p-full-width
+  padding: 3rem 3.5rem!important;
+.bg-full-width
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: bottom
+  margin-inline: -3.3rem
+.bg-fondo
+  &-1
+    background-image: url(../assets/curso/temas/bg/fondo1.svg)
+    background-repeat: no-repeat
+    margin-inline: -3.2rem !important
+    background-size: cover    
+  &-2
+    background-image: url(../assets/curso/temas/bg/fondo2.svg)    
+    background-repeat: no-repeat
+    margin-inline: -3.2rem !important
+    background-size: cover
+  &-3
+    background-image: url(../assets/curso/temas/bg/fondo3.svg)    
+    background-repeat: no-repeat
+    margin-inline: -3.2rem !important
+    background-size: cover    
+.bg-color
+  &-1
+    background-color: $color-primario
+  &-2
+    background-color: #F5EFFA  
+  &-3
+    background-color: #D6F1F9
+  &-4
+    background-color: #fef4e6
+  &-5
+    background-color: #E8DE49
+  &-6
+    background-color: #eaf8fc
+  &-7
+    background-color: #ece0f6  
+  &-8
+    background-color: #f8f7f4
+  &-9
+    background-color: #675874
+  &-10
+    background-color: #9adef0
+  &-11
+    background-color: #EAF8FC
+  &-12
+    background-color: #000
+  &-13
+    background-color: #000
+  
+/**************************************************************/
+
 
 /**************************************************************/
 /*Media Queries*/  
@@ -52,3 +109,514 @@
 @media screen and (max-width: $bp-min-sm)
   .mb-cus
     margin-bottom: 2em !important
+
+
+.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6, .banner-interno__titulo h1, .banner-interno__titulo h2, .banner-interno__titulo h3, .banner-interno__titulo h4, .banner-interno__titulo h5, .banner-interno__titulo h6
+  color: white !important
+
+
+
+.titulo-principal.color-acento-contenido .titulo-principal__numero span
+  color: black !important
+  
+.banner-interno__fondo
+  background-image: url("../assets/curso/portada/banner_interno.png") !important
+
+/// TITULOS TERCER NIVEL
+.titulo-tercer-nivel
+  width: fit-content
+  max-width: 100%
+  position: relative
+  display: inline-flex
+  align-items: center
+  background-color: #FF9200
+  border-radius: 30px
+  padding-right: 16px
+  padding-left: 52px
+  min-height: 40px
+ 
+  @media screen and (max-width: $bp-min-md)
+    padding-left: 0px
+
+
+  &__icon
+    position: absolute
+    left: -10px
+    top: 50%
+    transform: translateY(-50%)
+    width: 65px
+    max-width: 65px
+    height: auto
+
+    @media screen and (max-width: $bp-min-md)
+      display: none
+
+  &__text
+    margin: 0
+    margin: 0 15px 0 15px
+    white-space: normal
+    word-break: break-word
+
+/*Slideshows*/
+.bg-fondo
+  &-slider
+    background-image: url("../assets/curso/portada/fondo-banner-principal.png") !important
+    background-position: bottom
+    background-repeat: no-repeat
+    background-size: cover
+    margin-inline: -3.2rem !important
+.slyder-a__btn--sigt, .slyder-a__btn--atrs
+  background-color: #E6E51D !important
+.slyder-a__bullets__item--active 
+  background-color: #E6E51D !important
+  border-color: #E6E51D
+.slyder-a__bullets__item
+  background-color: #E6E51D
+  border: 1px solid #E6E51D
+.bloque-texto-b.color-secundario:before
+  background-color: #CBE7E8
+.tarjeta-numerada.color-primario
+  border-color: #F3F0EA
+  background-color: #F3F0EA
+.tarjeta-numerada.color-primario .tarjeta-numerada__numero
+  background-color: #E6E51D
+.tarjeta-numerada__numero
+  top: 35%
+/*Slideshows*/
+
+/* Tablas */
+
+.tabla-a
+  overflow-x: auto !important 
+  -webkit-overflow-scrolling: touch 
+  
+  table
+    min-width: 600px 
+    table-layout: auto
+    
+    thead
+      border-color: $color-acento-contenido
+      background-color: $color-acento-contenido !important
+      
+    th, td
+      text-align: start
+      padding: 15px 
+      
+    tbody
+      tr:nth-child(odd)
+        background-color: #F6F6F6
+      tr:nth-child(even)
+        background-color: #FFFFFF
+
+.separador__tabla
+  background-color: #F6F6F6
+
+
+/* Tablas */
+
+
+    
+
+.lista-puntos-verdes
+  padding-left: 1.2rem !important
+  list-style-type: disc !important 
+  li
+    color: black !important 
+    padding-left: 0.5rem    
+    p, span
+      color: #111111 !important 
+.banner-costos
+  .row
+    @media screen and (max-width: 768px)
+      img
+        height: 240px !important
+
+/*Accordion*/
+.tarjeta.acordeonA
+  background-color: #ece0f6 !important
+  transition: background-color 0.3s ease-in-out
+  
+  .acordion__header
+    .acordion__titulo
+      h3, h4, span, a, p
+        color: #000 !important
+
+  &.acordion__activo
+    background-color: #FCD8A2 !important
+    .acordion__header
+      .acordion__titulo
+        h3, h4, span, a, p
+          color: #000000 !important
+    
+    .acordion__contenido
+      p, li, span
+        color: #000000 !important
+
+.acordion__accion__btn--a
+  background-color: #E6E51D !important 
+  i
+    color: #000 !important
+
+.acordeonA
+  position: relative  
+  width: 100%  
+  p, h4
+    padding-left: 4.3rem !important 
+  .lista-ul
+    padding-left: 4.3rem
+    li
+      display: flex
+      align-items: flex-start
+      i
+        padding-top: 1px   
+/*Fin Accordion*/
+
+/* Código para los carruseles */
+.carousel-bg
+  .fas
+    &.fa-chevron-left, &.fa-chevron-right
+      display: inline-flex !important
+      align-items: center !important
+      justify-content: center !important
+      width: 45px !important
+      height: 45px !important
+      min-width: 45px !important
+      min-height: 45px !important
+      padding: 0 !important
+      margin: 0 !important
+      border-radius: 50% !important
+      background-color: #E6E51D !important
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+      font-size: 16px      
+      color: #000 !important
+      &::before
+        color: #000 !important      
+      @media screen and (max-width: $bp-max-md)
+        background-color: transparent !important
+        box-shadow: none !important
+        font-size: 20px !important
+        color: #FFC94A !important 
+        &::before
+          color: #FFC94A !important
+
+.bordes
+  border: 1px solid #CBD5E0 !important
+/* Fin Código para los carruseles */
+
+/* Ajuste para botones de Slider en Móviles */
+@media (max-width: $bp-max-sm)
+  .slyder-a__btn--sigt, .slyder-a__btn--atrs
+    width: 35px !important 
+    height: 35px !important
+    background-size: 10px !important 
+    opacity: 1 !important
+  
+  .slyder-a__bullets__item
+    width: 10px !important
+    height: 10px !important
+    margin: 0 4px !important
+
+  .slyder-a__bullets
+    bottom: 10px !important 
+
+
+.btn-custom-download
+  background-color: $color-acento-botones !important 
+  border-color: $color-acento-botones !important
+  color: #000 !important   
+  transition: transform 0.2s ease-in-out 
+
+  &:hover
+    transform: scale(1.05)
+  
+
+.w-buttons
+  min-width: 160px
+  text-align: center
+  justify-content: center 
+
+@media (max-width: $bp-max-md)
+  .w-buttons
+    width: 100%
+
+
+
+//Titulo Nivel 4
+.titulo-nivel4
+  width: fit-content !important
+  max-width: 100% !important
+  position: relative !important
+  display: inline-flex !important
+  align-items: center !important
+  background-color: #A4E0D4 !important 
+  border-radius: 10px !important       
+  min-height: 48px !important          
+  margin: 0 !important
+  
+  padding-top: 10px !important
+  padding-bottom: 10px !important
+  padding-left: 30px !important
+  padding-right: 30px !important
+
+  font-size: 1.125rem !important
+  font-weight: bold !important
+  color: #051d38 !important
+  white-space: normal !important
+  word-break: break-word !important
+  text-align: left !important
+//Final Titulo Nivel 4
+
+
+
+.gy-tarjetas
+  --bs-gutter-y: 2.5rem
+
+.tarjeta-icono-col
+  padding-top: 45px
+  display: flex
+
+.tarjeta-icono
+  background-color: #E3EFD7 !important
+  border-radius: 6px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-start
+  position: relative
+  width: 100%
+  flex: 1 1 auto
+  
+  padding: 60px 1.5rem 1.5rem !important
+
+  &__img-wrapper
+    width: 90px
+    height: 90px
+    border-radius: 50% !important
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: -45px
+    left: 50%
+    transform: translateX(-50%)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08)
+
+  &__img
+    width: 70px
+    max-width: 100%
+
+  p
+    color: #000 !important
+    font-size: 0.95rem
+    line-height: 1.4
+    font-weight: 500
+    margin-top: 0
+
+.banner-mantenimiento
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05)
+
+  @media screen and (min-width: 992px)
+    margin-top: 45px
+    height: calc(100% - 45px) !important
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    
+    pointer-events: none
+    box-sizing: border-box
+    border-radius: 8px
+    z-index: 2
+
+
+@media screen and (max-width: 575.98px)
+  .gy-tarjetas
+    --bs-gutter-y: 2rem
+
+  .tarjeta-icono-col
+    padding-top: 40px
+    max-width: 420px
+    margin-inline: auto
+
+  .tarjeta-icono
+    min-height: auto
+    padding: 55px 1.25rem 1.5rem !important
+
+    &__img-wrapper
+      width: 80px
+      height: 80px
+      top: -40px
+
+    &__img
+      width: 62px
+
+    p
+      font-size: 0.92rem
+
+  .banner-mantenimiento
+    min-height: 260px
+
+/*Audio*/
+.bg-custom-teal
+  background-color: #e8de49 !important 
+  position: relative
+  overflow: hidden
+  
+.bg-custom-dark-teal
+  background-color: #e8de49 !important
+
+.border-lemon
+  border: 4px solid #a19a32 !important
+  border-radius: 15px
+
+/*Fin Audio*/
+
+  
+.contenedor-flex-cards
+  display: flex !important
+  align-items: stretch !important
+
+  @media (min-width: 992px)
+    .col-lg-9, .col-lg-3
+      display: flex !important
+      align-items: stretch !important
+
+// Diseño de tarjetas
+.tarjeta-atributo
+  display: flex
+  flex-direction: column
+  height: 100%
+  overflow: hidden
+  background-color: #f3f7f0 
+  
+  &__header
+    background-color: #bbd99c
+    height: 68px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 5px 12px
+    
+    h4
+      color: #051d38
+      font-size: 1.05rem
+      font-weight: bold
+      line-height: 1.2
+      margin: 0
+      
+  &__body
+    flex-grow: 1
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 1rem 1.2rem !important
+    
+    p
+      color: #051d38
+      font-size: 0.9rem
+      line-height: 1.35
+      margin: 0
+
+
+.banner-mantenimiento
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05)
+  width: 100%
+  height: 100%
+  display: flex
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover 
+    border-radius: 8px
+    display: block
+
+.banner-interno__titulo__icono i
+  color: #000 !important
+
+/*Pestanas */
+.tabs-c__tab--active
+  font-weight: bold
+
+.tabs-c__content-item
+  background-color: #FAF8DA
+  padding: 2rem
+
+.tabs-c
+  border-bottom: none !important
+
+.tabs-a__tab
+  background-color: #F1EDF7
+/*Pestanas*/
+
+
+
+
+// Accordeon pasos
+.linea-tiempo-d__item__content.tarjeta.tarjeta--gris, .linea-tiempo-d__item__number.tarjeta.tarjeta--gris
+  background-color: #E5E2D3
+
+.linea-tiempo-d__item.row.linea-tiempo-d__item--selected
+  .linea-tiempo-d__item__content.tarjeta.tarjeta--gris
+    background-color: #FFE9B5
+    
+.linea-tiempo-d.color-secundario .linea-tiempo-d__item--selected .linea-tiempo-d__item__number
+  background-color: #FFC94A
+
+.linea-tiempo-d.color-primario .linea-tiempo-d__item--selected .linea-tiempo-d__item__number
+  background-color: #FFC94A
+// Accordeon pasos
+
+
+.lista-ul.color-vinotinto-custom
+  li.d-flex
+    align-items: start !important 
+    margin-bottom: 1rem !important     
+    .fas.fa-check-circle
+      color: #B16500 !important 
+      font-size: 1.15rem !important
+      margin-top: 4px !important
+      display: inline-block !important      
+      &::before
+        color: #B16500 !important
+    span
+      display: inline-block !important
+      line-height: 1.6 !important
+
+.lista-ul.color-naranja-custom
+  li.d-flex
+    align-items: start !important 
+    margin-bottom: 1rem !important     
+    .fas.fa-arrow-circle-right,
+    .fas.fa-circle-chevron-right
+      color: #FF9200 !important 
+      font-size: 1.15rem !important
+      margin-top: 4px !important
+      display: inline-block !important      
+      &::before
+        color: #FF9200 !important
+    span
+      display: inline-block !important
+      line-height: 1.6 !important
+
+
+.lista-amarilla li i.fas::before,
+.lista-amarilla li .fas::before
+  color: #EFCE09 !important
+
+.tarjeta--boton.color-primario:active, .tarjeta--boton.color-primario:focus, .tarjeta--boton.color-primario:hover
+  background-color: #F5F1B5 !important
+
+.tarjeta--boton
+  background-color: #DAF2ED !important
+
+
+
+.boton *, .boton--sm *, .barra-avance__boton--regresar span
+  color: #000 !important
+
+
