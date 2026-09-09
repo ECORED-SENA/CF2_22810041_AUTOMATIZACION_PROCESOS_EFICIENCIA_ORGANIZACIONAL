@@ -706,7 +706,7 @@ export default {
             {
               id: 'c',
               texto:
-                'Almacenar resultados obtenidos desde aplicaciones <i>web</i>que cambian durante cada nueva ejecución.',
+                'Almacenar resultados obtenidos desde aplicaciones <i>web</i> que cambian durante cada nueva ejecución.',
               esCorrecta: false,
             },
             {
