@@ -1,12 +1,9 @@
 <template lang="pug">
-  .curso-main-container.pb-3
-    BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
-    .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-      // Para cuestionario usar: <ActividadController :cuestionario="cuestionario"/>
-      // Para parrafo usar: <ActividadController :parrafo="parrafo"/>
-      #Actividad                
-      <ActividadController :cuestionario="cuestionario"/>
-
+.curso-main-container.pb-3
+  BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+    #Actividad        
+      ActividadController(:cuestionario="cuestionario")
 </template>
 
 <script>
@@ -19,37 +16,43 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+      tema: 'Creación de la automatización del proceso con UiPath',
       titulo: 'Cuestionario',
-      introduccion: '<b>Objetivo:</b> XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+      introduccion:
+        '<b>Objetivo:</b> identificar los conceptos clave relacionados con la automatización de procesos, el uso de UiPath, la construcción de <i>workflows</i>, las variables, el control de flujo y la administración de robots de <i>software</i>.',
       barajarPreguntas: false,
       titulo_aprobado: '¡BUEN TRABAJO!',
       titulo_reprobado: 'VUELVA A INTENTARLO',
       preguntas: [
         {
           id: 1,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿En qué consiste la automatización dentro del ámbito informático?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Ejecutar tareas mediante tecnología con mínima intervención humana.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Realizar tareas mediante personas con intervención tecnológica constante.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Supervisar procesos mediante informes con intervención humana permanente.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Documentar procesos mediante archivos con revisión manual frecuente.',
               esCorrecta: false,
             },
           ],
@@ -58,28 +61,32 @@ export default {
         },
         {
           id: 2,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto: '¿Qué caracteriza a un proceso dentro de una automatización?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Representa una acción específica ejecutada de manera independiente siempre.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Integra varias tareas relacionadas siguiendo una secuencia para resultados.',
+              esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Describe una variable utilizada para almacenar información durante ejecuciones.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Define una aplicación empleada para administrar proyectos ya terminados.',
               esCorrecta: false,
             },
           ],
@@ -87,29 +94,33 @@ export default {
           mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
-          id: 13,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          id: 3,
+          texto: '¿Qué significa RPA en el contexto de la automatización?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Registro Programado de Procesos Automatizados mediante herramientas informáticas especializadas.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Robot Programable para Procesos Administrativos mediante aplicaciones informáticas empresariales.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Automatización Robótica de Procesos mediante robots de software configurados.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Administración Remota de Procesos Automatizados mediante plataformas tecnológicas integradas.',
               esCorrecta: false,
             },
           ],
@@ -118,29 +129,34 @@ export default {
         },
         {
           id: 4,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Cuál es una característica favorable de un proceso candidato a automatización?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Presentar numerosas excepciones que requieren decisiones humanas durante ejecuciones.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Utilizar información principalmente física que requiere transcripción manual durante procesos.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Cambiar constantemente las aplicaciones utilizadas para ejecutar las actividades programadas.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Poseer reglas de negocio claras y previamente definidas para ejecutarse.',
+              esCorrecta: true,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
@@ -148,28 +164,32 @@ export default {
         },
         {
           id: 5,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto: '¿Cuál es la función principal de UiPath Studio?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Diseñar y construir automatizaciones mediante actividades y flujos de trabajo.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Supervisar y programar automatizaciones mediante procesos publicados y ejecutados remotamente.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Iniciar y gestionar automatizaciones disponibles directamente desde el equipo local.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Ejecutar exclusivamente instrucciones configuradas previamente dentro de los procesos automatizados.',
               esCorrecta: false,
             },
           ],
@@ -178,28 +198,33 @@ export default {
         },
         {
           id: 6,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Qué componente de UiPath ejecuta las instrucciones definidas en la automatización?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'UiPath Studio diseña las actividades configuradas dentro del flujo automatizado.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Robot desarrolla las actividades configuradas siguiendo la secuencia previamente establecida.',
+              esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Assistant publica los proyectos configurados para administrarlos mediante servicios remotos.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Orchestrator construye directamente las actividades utilizadas durante el diseño del <i>workflow.</i>',
               esCorrecta: false,
             },
           ],
@@ -208,28 +233,33 @@ export default {
         },
         {
           id: 7,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Qué permite realizar UiPath Orchestrator dentro de la plataforma?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Construir <i>workflows</i> mediante actividades incorporadas directamente desde el entorno gráfico.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Almacenar exclusivamente variables utilizadas durante la ejecución del flujo de trabajo.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Publicar, programar, ejecutar y supervisar las automatizaciones desarrolladas en UiPath.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Diseñar interfaces gráficas para reemplazar las aplicaciones utilizadas durante procesos.',
               esCorrecta: false,
             },
           ],
@@ -238,29 +268,34 @@ export default {
         },
         {
           id: 8,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Cuál corresponde a una etapa del ciclo de vida de una automatización?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Eliminar la documentación antes de comenzar la construcción del robot automatizado.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Modificar continuamente las aplicaciones mientras se ejecutan los procesos ya automatizados.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Construir primero el robot y posteriormente identificar el proceso que será automatizado.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Analizar y documentar el proceso antes de diseñar la solución automatizada.',
+              esCorrecta: true,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
@@ -268,28 +303,33 @@ export default {
         },
         {
           id: 9,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Desde dónde se obtiene el instalador de UiPath Studio según el documento?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Desde Automation Cloud utilizando las opciones disponibles en Resource Center.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Desde UiPath Assistant utilizando directamente las opciones internas del robot instalado.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Desde Main Sequence utilizando las herramientas disponibles para descargar nuevos proyectos.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Desde Data Manager utilizando las opciones destinadas a administrar paquetes instalados.',
               esCorrecta: false,
             },
           ],
@@ -298,28 +338,33 @@ export default {
         },
         {
           id: 10,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Qué modalidad de licencia se utiliza para el proceso de aprendizaje y práctica?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Enterprise License destinada principalmente al desarrollo corporativo de procesos automatizados complejos.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Community License destinada al proceso de aprendizaje y práctica con UiPath.',
+              esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Professional License orientada principalmente al desarrollo individual de aplicaciones automatizadas empresariales.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Academic License utilizada exclusivamente para administrar procesos educativos mediante Automation Cloud.',
               esCorrecta: false,
             },
           ],
@@ -328,28 +373,33 @@ export default {
         },
         {
           id: 11,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Qué archivo corresponde al <i>workflow </i>principal de un proyecto en UiPath Studio?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'project.json contiene exclusivamente el <i>workflow </i>principal utilizado durante toda la automatización.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Dependencias contiene directamente las actividades principales ejecutadas durante todo el proceso automatizado.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Main.xaml corresponde al <i>workflow </i>principal utilizado dentro del proyecto de automatización.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Plantillas contiene exclusivamente la secuencia principal donde se incorporan todas las actividades.',
               esCorrecta: false,
             },
           ],
@@ -358,29 +408,33 @@ export default {
         },
         {
           id: 12,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto: '¿Cuál es la función del panel Data Manager en UiPath Studio?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Ejecutar directamente las automatizaciones desarrolladas dentro del proyecto antes de publicarlas.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Mostrar exclusivamente los errores encontrados durante la validación completa del proyecto desarrollado.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Administrar únicamente las propiedades visuales correspondientes a las actividades del flujo automatizado.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Administrar variables, argumentos, espacios de nombres y conexiones utilizadas en proyectos.',
+              esCorrecta: true,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
@@ -388,28 +442,33 @@ export default {
         },
         {
           id: 13,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Qué permite almacenar una variable durante una automatización?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Información que puede cambiar durante la ejecución del flujo de trabajo.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Actividades que deben ejecutarse permanentemente dentro del flujo de trabajo creado.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Aplicaciones que deben instalarse antes de comenzar la automatización del proceso.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Proyectos que deben publicarse después de completar las pruebas del robot.',
               esCorrecta: false,
             },
           ],
@@ -418,28 +477,33 @@ export default {
         },
         {
           id: 14,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Qué tipo de dato utiliza la variable “resultado” en el caso de estudio?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Int32 porque almacena cantidades enteras obtenidas durante cada conversión realizada automáticamente.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'String porque almacena como texto el contenido recuperado desde la aplicación web.',
+              esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Boolean porque almacena únicamente el estado verdadero o falso del resultado obtenido.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'DateTime porque registra la fecha exacta correspondiente a cada resultado de conversión.',
               esCorrecta: false,
             },
           ],
@@ -448,28 +512,32 @@ export default {
         },
         {
           id: 15,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto: '¿Cuál es la función de la estructura If dentro de UiPath?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Recorrer cada elemento almacenado dentro de una colección de valores previamente definida.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Repetir indefinidamente actividades sin evaluar condiciones durante la ejecución del flujo automatizado.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Evaluar una condición y ejecutar una de dos ramas según el resultado.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Seleccionar automáticamente múltiples proyectos para ejecutarlos simultáneamente desde UiPath Studio.',
               esCorrecta: false,
             },
           ],
@@ -478,29 +546,34 @@ export default {
         },
         {
           id: 16,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Qué función cumple la estructura For Each en una automatización?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Ejecutar únicamente una actividad cuando una condición específica resulta completamente verdadera.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Seleccionar una rama entre varias dependiendo del valor obtenido durante una expresión.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Repetir actividades mientras una condición permanezca verdadera antes de cada nueva iteración.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Recorrer cada elemento de una colección y ejecutar actividades para cada elemento.',
+              esCorrecta: true,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
@@ -508,28 +581,33 @@ export default {
         },
         {
           id: 17,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Qué tipo de proyecto se utiliza para desarrollar el caso práctico presentado?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Proceso, porque permite estructurar y ejecutar actividades del flujo de automatización.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Biblioteca, porque permite almacenar componentes reutilizables para ejecutar directamente la automatización.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Plantilla, porque permite configurar estructuras reutilizables como proyecto principal de automatización.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Prueba, porque permite validar aplicaciones mediante flujos destinados únicamente a comprobaciones.',
               esCorrecta: false,
             },
           ],
@@ -538,28 +616,33 @@ export default {
         },
         {
           id: 18,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Qué función cumple el panel Output o Salida en UiPath Studio?',
           imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Administrar las variables y argumentos empleados durante la construcción del flujo automatizado.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Consultar información generada durante la ejecución y facilitar el seguimiento del proceso.',
+              esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Modificar propiedades correspondientes a las actividades seleccionadas dentro del diseñador del proyecto.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Buscar rápidamente comandos disponibles para incorporarlos directamente dentro del flujo de trabajo.',
               esCorrecta: false,
             },
           ],
@@ -568,28 +651,33 @@ export default {
         },
         {
           id: 19,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Para qué se utilizan los argumentos dentro de una automatización en UiPath?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Mantener valores completamente fijos durante toda la ejecución de un proceso automatizado.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Registrar exclusivamente errores generados durante la ejecución de diferentes actividades del <i>workflow.</i>',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Intercambiar información entre diferentes <i>workflows</i> mediante entradas, salidas o ambas direcciones.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Almacenar colecciones completas destinadas exclusivamente a estructuras repetitivas del tipo For Each.',
               esCorrecta: false,
             },
           ],
@@ -598,29 +686,34 @@ export default {
         },
         {
           id: 20,
-          texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+          texto:
+            '¿Qué finalidad tienen las constantes dentro de una automatización desarrollada en UiPath?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Intercambiar información variable entre diferentes <i>workflows</i> durante la ejecución del proceso automatizado.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Recorrer colecciones de datos mediante ciclos configurados dentro del flujo de trabajo principal.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXX',
+              texto:
+                'Almacenar resultados obtenidos desde aplicaciones <i>web</i>que cambian durante cada nueva ejecución.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-              esCorrecta: false,
+              texto:
+                'Representar valores que deben permanecer sin modificaciones durante la ejecución del proceso.',
+              esCorrecta: true,
             },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',

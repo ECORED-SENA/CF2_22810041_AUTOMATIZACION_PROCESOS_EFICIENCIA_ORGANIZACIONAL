@@ -189,7 +189,7 @@
                       h5 Figura 2.
                       span Sitio oficial de UiPath con la opción de prueba gratuita
                     figure
-                    img(src='@/assets/curso/temas/t2/tarjeta03_1.png', alt='Captura de pantalla del sitio web de UiPath con la opción de prueba gratuita, utilizada como punto de acceso para iniciar el registro o ingresar a los servicios de la plataforma.', style="width: 100%;").mx-auto
+                    img(src='@/assets/curso/temas/t2/tarjeta03_1.png', alt='Captura de pantalla del sitio <i>web</i> de UiPath con la opción de prueba gratuita, utilizada como punto de acceso para iniciar el registro o ingresar a los servicios de la plataforma.', style="width: 100%;").mx-auto
               .col-lg-5.order-1.mb-3.mb-lg-0
                 h4 Acceso a UiPath
                 p En el sitio oficial de <b>UiPath</b> se encuentra disponible la opción de prueba gratuita, que permite iniciar el proceso de acceso a la plataforma y explorar las herramientas disponibles para el desarrollo de automatizaciones.
@@ -363,7 +363,7 @@
         .col-md-auto.col-lg-10
           .titulo-sexto.color-acento-contenido.mb-3
             h5 Figura 5.
-            span  Interfaz de UiPath Studio en su versión vigente, con la cinta compacta y la Command Palette.[P 
+            span  Interfaz de UiPath Studio en su versión vigente, con la cinta compacta y la Command Palette.
         figure.mb-0.text-center
             img.mx-auto(src='@/assets/curso/temas/t2/img8.png', alt='Captura de pantalla de la interfaz de UiPath Studio con el explorador del proyecto, el área de diseño, el panel de propiedades, el gestor de datos y la Command Palette, componentes utilizados para construir, configurar y administrar un flujo de automatización. ', style="width: 1000px;")
       .row.justify-content-center.mb-5(data-aos="fade-right")
@@ -413,7 +413,7 @@
             h5 Figura 7.
             span Flujo de obtención y almacenamiento de texto desde una aplicación web
         figure.mb-0.text-center
-            img.mx-auto(src='@/assets/curso/temas/t2/img11.png', alt='Diagrama de flujo para obtener información desde una aplicación web que conecta la aplicación con la actividad Obtener texto, recupera el contenido mediante TextString y lo almacena en la variable resultado para utilizarlo posteriormente en la automatización.', style="width: 400px;")
+            img.mx-auto(src='@/assets/curso/temas/t2/img11.png', alt='Diagrama de flujo para obtener información desde una aplicación <i>web</i>que conecta la aplicación con la actividad Obtener texto, recupera el contenido mediante TextString y lo almacena en la variable resultado para utilizarlo posteriormente en la automatización.', style="width: 400px;")
       //- Título nivel 3 - Imagen
       .titulo-tercer-nivel.mb-5.mt-3(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/titulos.svg')
@@ -497,7 +497,7 @@
               img.w-100(src='@/assets/curso/temas/t2/tarjeta06_1.png', alt='', style='object-fit: cover;')
             .bg-color-9.p-4.flex-grow-1
               h4.fw-bold.mb-3.text-white Argumentos
-              p.mb-0.text-white Permiten intercambiar información entre diferentes <i>workflows</i>. Pueden ser de entrada, de salida o de entrada y salida, según la dirección en la que se transmite la información entre los flujos de trabajo.
+              p.mb-0.text-white Permiten intercambiar información entre diferentes <i><i>workflows</i></i>. Pueden ser de entrada, de salida o de entrada y salida, según la dirección en la que se transmite la información entre los flujos de trabajo.
         .col-12.col-md-6
           .tarjeta.rounded-4.overflow-hidden.h-100.d-flex.flex-column
             figure.mb-0
@@ -543,7 +543,7 @@
               .row(titulo="Break / Continue")
                 p.mb-4 Permite interrumpir un ciclo o continuar con la siguiente iteración. Puede utilizarse para controlar el recorrido de una colección cuando se identifica una condición determinada.
               .row(titulo="Try Catch")
-                p.mb-4 Permite capturar errores y definir acciones para su tratamiento. Puede incorporarse para gestionar inconvenientes durante la interacción con una aplicación web o durante la escritura de información en Excel.
+                p.mb-4 Permite capturar errores y definir acciones para su tratamiento. Puede incorporarse para gestionar inconvenientes durante la interacción con una aplicación <i>web</i> o durante la escritura de información en Excel.
               .row(titulo="Retry Scope")
                 p.mb-4 Repite una actividad o un bloque hasta que se cumpla una condición o se alcance el número de reintentos configurado. Puede utilizarse como mecanismo de recuperación ante fallos temporales, por ejemplo, cuando un elemento de una página tarda en estar disponible.
       //- Fin Accordion 1
@@ -587,7 +587,7 @@
             h5 Figura 10.
             span Validación del resultado obtenido desde una aplicación web
         figure.mb-0.text-center
-            img.mx-auto(src='@/assets/curso/temas/t2/img15.png', alt='Diagrama de validación del resultado obtenido desde una aplicación web mediante una estructura If que comprueba si la variable resultado contiene información y dirige el flujo según se haya obtenido o no un valor de la conversión.', style="width: 500px;")
+            img.mx-auto(src='@/assets/curso/temas/t2/img15.png', alt='Diagrama de validación del resultado obtenido desde una aplicación <i>web</i> mediante una estructura If que comprueba si la variable resultado contiene información y dirige el flujo según se haya obtenido o no un valor de la conversión.', style="width: 500px;")
       //- Título nivel 3 - Imagen
       .titulo-tercer-nivel.mb-5.mt-3(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/titulos.svg')
@@ -651,13 +651,13 @@
           .col-lg-10
             AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta acordeonA")
               .row(titulo="Entradas")
-                p.mb-4 Comprenden la aplicación web de conversión de monedas, la colección de montos que serán procesados, la moneda de origen, la moneda de destino y la ruta del archivo de Excel en el que se registrarán los resultados.
+                p.mb-4 Comprenden la aplicación <i>web</i> de conversión de monedas, la colección de montos que serán procesados, la moneda de origen, la moneda de destino y la ruta del archivo de Excel en el que se registrarán los resultados.
               .row(titulo="Reglas")
                 p.mb-4 Para cada monto de la colección, el robot debe ingresarlo en el campo Amount, seleccionar la moneda de origen y la moneda de destino, ejecutar la conversión y obtener el resultado generado por la aplicación.
               .row(titulo="Salidas")
                 p.mb-4 Corresponden al resultado de cada conversión almacenado en la variable resultado, presentado mediante una Bandeja de mensajes y registrado posteriormente en el archivo de Excel.
               .row(titulo="Excepciones")
-                p.mb-4 Pueden presentarse cuando la aplicación web no carga, un elemento de la interfaz no está disponible, no se obtiene el texto del resultado o el archivo de Excel no puede utilizarse correctamente.
+                p.mb-4 Pueden presentarse cuando la aplicación <i>web</i> no carga, un elemento de la interfaz no está disponible, no se obtiene el texto del resultado o el archivo de Excel no puede utilizarse correctamente.
       //- Fin Accordion 1      
       p(data-aos="fade-left") La definición de estos elementos permite delimitar el comportamiento esperado del robot antes de iniciar la construcción del flujo de trabajo.
       //- Título nivel 3 - Imagen
@@ -674,7 +674,7 @@
               img.mx-auto(src='@/assets/curso/temas/t2/tarjeta08_1.svg', alt='', style="width: 90px;")
             .flex-grow-1.d-flex.flex-column
               h4.mb-3.text-center resultado
-              p.mb-0 String. Almacena el texto obtenido de la aplicación web después de realizar la conversión. Su contenido se utiliza posteriormente para validar y registrar el resultado obtenido.
+              p.mb-0 String. Almacena el texto obtenido de la aplicación <i>web</i> después de realizar la conversión. Su contenido se utiliza posteriormente para validar y registrar el resultado obtenido.
         .col-12.col-sm-6.col-lg-4.mb-4
           .tarjeta--boton.color-primario.rounded-4.p-4.h-100.d-flex.flex-column.align-items-center
             figure.mb-4
@@ -708,7 +708,7 @@
               .row(titulo="Crear el proyecto")
                 p.mb-4 Crear un proyecto de tipo Proceso en UiPath Studio y preparar la secuencia principal en la que se desarrollará la automatización de conversión de monedas.
               .row(titulo="Preparar la aplicación web")
-                p.mb-4 Abrir la aplicación web de conversión de monedas y comprobar que los elementos necesarios para la interacción puedan ser identificados desde <b>UiPath Studio</b>.
+                p.mb-4 Abrir la aplicación <i>web</i> de conversión de monedas y comprobar que los elementos necesarios para la interacción puedan ser identificados desde <b>UiPath Studio</b>.
               .row(titulo="Crear el ciclo For Each")
                 p.mb-4 Incorporar una estructura <b>For Each</b> para recorrer la colección de montos que serán procesados. Para el caso práctico se utiliza una colección como New String() {"1000","5000","10000"}.
               .row(titulo="Configurar currentItem")
@@ -724,7 +724,7 @@
           .col-lg-9
             AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta acordeonA")
               .row(titulo="Ejecutar la conversión")
-                p.mb-4 Activar el botón correspondiente de la aplicación web y esperar a que el sistema genere el resultado de la conversión.
+                p.mb-4 Activar el botón correspondiente de la aplicación <i>web</i> y esperar a que el sistema genere el resultado de la conversión.
               .row(titulo="Capturar el resultado")
                 p.mb-4 Utilizar la actividad <b>Obtener texto</b> para recuperar el resultado generado por la aplicación y almacenar su salida <b>TextString</b> en la variable <b>resultado</b>, de tipo <b>String</b>.
               .row(titulo="Validar el resultado")
@@ -801,7 +801,7 @@
                       h5 Figura 13.
                       span Configuración de la actividad de captura de datos sobre la página de consulta
                     figure
-                    img(src='@/assets/curso/temas/t2/tarjeta09_2.png', alt='Captura de pantalla de UiPath Studio con la configuración de una actividad de captura de datos asociada con la página web de consulta, utilizada para recuperar el resultado generado durante la conversión.', style="width: 100%;").mx-auto
+                    img(src='@/assets/curso/temas/t2/tarjeta09_2.png', alt='Captura de pantalla de UiPath Studio con la configuración de una actividad de captura de datos asociada con la página <i>web</i> de consulta, utilizada para recuperar el resultado generado durante la conversión.', style="width: 100%;").mx-auto
               .col-lg-5.order-1.mb-3.mb-lg-0
                 h4 Captura de los datos
                 p La actividad de captura se configura sobre la página de consulta para identificar y obtener los datos requeridos, estableciendo los elementos que serán procesados posteriormente por la automatización.
