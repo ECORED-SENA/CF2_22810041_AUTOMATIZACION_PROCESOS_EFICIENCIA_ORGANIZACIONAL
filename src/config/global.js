@@ -61,12 +61,12 @@ export default {
         subMenu: [
           {
             numero: '2.1',
-            titulo: 'Entorno de trabajo (<b>workflow</b>)',
+            titulo: 'Instalación de UiPath Studio (versión vigente)',
             hash: 't_2_1',
           },
           {
             numero: '2.2',
-            titulo: 'Variables y tipos de datos',
+            titulo: 'Entorno de trabajo (<i>workflow</i>)',
             hash: 't_2_2',
           },
           {

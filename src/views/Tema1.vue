@@ -168,7 +168,7 @@
                 figure.mb-0.text-center
                   img.mx-auto(src='@/assets/curso/temas/t1/img9.png', alt='', style="width: 330px;")
               .col-12.col-lg-8.order-2.order-lg-1.bg-color-3.p-4(data-aos="fade-left")
-                p.mb-0 <b>UiPath</b> es una plataforma de <b>Automatización Robótica de Procesos (RPA)</b> que permite diseñar, construir y ejecutar automatizaciones mediante robots de software. A diferencia de un robot físico, el robot de <i>software</i> ejecuta las instrucciones definidas para un proceso e interactúa con las aplicaciones y los sistemas que forman parte de la automatización.
+                p.mb-0 <b>UiPath</b> es una plataforma de <b>Automatización Robótica de Procesos (RPA)</b> que permite diseñar, construir y ejecutar automatizaciones mediante robots de <i>software</i>. A diferencia de un robot físico, el robot de <i>software</i> ejecuta las instrucciones definidas para un proceso e interactúa con las aplicaciones y los sistemas que forman parte de la automatización.
       p(data-aos="fade-left") En el desarrollo de una automatización, <b>UiPath</b> permite representar las acciones que debe realizar el robot mediante un <i>workflow</i> o <b>flujo de trabajo</b>. Este flujo organiza las actividades que se ejecutarán durante el proceso y permite establecer el orden en que deben realizarse las diferentes acciones.
       p(data-aos="fade-left") La plataforma permite trabajar con distintos tipos de aplicaciones, entre ellas, aplicaciones de escritorio y páginas web. El robot de <i>software</i> ejecuta las actividades definidas en el flujo de trabajo y produce los resultados establecidos para el proceso. La plataforma <b>UiPath</b> está compuesta por diferentes elementos que participan en el ciclo de una automatización:
       .row.bg-fondo-2(data-aos="fade-right")
@@ -180,7 +180,7 @@
                   h4.fw-bold.mb-3 UiPath Studio
                   figure.mb-3
                     img.mx-auto(src='@/assets/curso/temas/t1/tarjeta02_1.png', alt='', style='max-width: 250px; width: 100%;')
-                  p.mb-0 Entorno en el que se diseñan y construyen las automatizaciones mediante actividades y flujos de trabajo. Permite estructurar las acciones que posteriormente ejecutará el robot de software.              
+                  p.mb-0 Entorno en el que se diseñan y construyen las automatizaciones mediante actividades y flujos de trabajo. Permite estructurar las acciones que posteriormente ejecutará el robot de <i>software.</i>              
               .col-12.col-md-4
                 .bg-color-8.p-4.h-100.d-flex.flex-column.align-items-center
                   h4.fw-bold.mb-3 Robot
@@ -206,8 +206,8 @@
           figure.mb-0.text-center
             img.mx-auto(src='@/assets/curso/temas/t1/img10.png', alt='', style="width: 330px;")
         .col-12.col-lg-8.order-2.order-lg-1.bg-color-3.p-4(data-aos="fade-left")
-          p.mb-0 En el proceso de aprendizaje se inicia con la instalación de <b>UiPath</b> y el acceso a <b>Automation Cloud</b>. Posteriormente, se reconoce el entorno de <b>UiPath Studio</b> y se crea un proyecto de automatización. Finalmente, se construye y ejecuta un flujo de trabajo utilizando las actividades necesarias para resolver el caso de estudio.
-          p La elección de una herramienta de automatización debe considerar aspectos como el tipo de proceso, las aplicaciones que intervienen, la facilidad de integración, los conocimientos requeridos, las posibilidades de seguimiento y mantenimiento, y los recursos disponibles para su implementación. Estos criterios permiten seleccionar una solución acorde con las características y necesidades del proceso que se desea automatizar.
+          p.mb-0 El proceso de aprendizaje se inicia con la instalación de <b>UiPath</b> y el acceso a <b>Automation Cloud</b>. Posteriormente, se reconoce el entorno de <b>UiPath Studio</b> y se crea un proyecto de automatización. Finalmente, se construye y ejecuta un flujo de trabajo utilizando las actividades necesarias para resolver el caso de estudio.
+          p La elección de una herramienta de automatización debe considerar aspectos como el tipo de proceso, las aplicaciones que intervienen, la facilidad de integración, los conocimientos requeridos, las posibilidades de seguimiento y mantenimiento y los recursos disponibles para su implementación. Estos criterios permiten seleccionar una solución acorde con las características y necesidades del proceso que se desea automatizar.
 
 </template>
 
@@ -229,4 +229,3 @@ export default {
 </script>
 
 <style lang="sass"></style>
-

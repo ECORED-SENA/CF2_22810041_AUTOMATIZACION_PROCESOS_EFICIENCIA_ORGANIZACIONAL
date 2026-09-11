@@ -11,7 +11,7 @@
           figure.mb-0.text-center
             img.mx-auto(src='@/assets/curso/temas/t2/img1.png', alt='', style="width: 300px;")
         .col-12.col-lg-8.order-2.order-lg-1.bg-color-4.p-4(data-aos="fade-left")
-          p.mb-0 La creación de una automatización en <b>UiPath</b> comprende una serie de etapas que permiten pasar desde la preparación del entorno hasta la construcción, ejecución y administración del robot de software. En esta sección se desarrolla, paso a paso, el proceso de instalación y configuración inicial de la herramienta, de acuerdo con la versión vigente utilizada para el desarrollo de las actividades prácticas.
+          p.mb-0 La creación de una automatización en <b>UiPath</b> comprende una serie de etapas que permiten pasar desde la preparación del entorno hasta la construcción, ejecución y administración del robot de <i>software.</i> En esta sección se desarrolla, paso a paso, el proceso de instalación y configuración inicial de la herramienta, de acuerdo con la versión vigente utilizada para el desarrollo de las actividades prácticas.
       p(data-aos="fade-left") Antes de iniciar el trabajo en <b>UiPath Studio</b>, es conveniente reconocer el <b>ciclo de vida de una automatización</b>, debido a que la construcción del robot corresponde únicamente a una de sus etapas. Este ciclo comprende la identificación del proceso candidato, su análisis y documentación, el diseño de la solución, la construcción del robot, las pruebas, la publicación y, finalmente, el monitoreo y mantenimiento.
       p(data-aos="fade-left") Considerar estas etapas desde el inicio contribuye a construir automatizaciones más estables y facilita su adaptación ante posibles cambios en las aplicaciones involucradas. Omitir el análisis y el diseño puede generar dificultades cuando se modifican las condiciones, interfaces o componentes del proceso automatizado.
       Separador
@@ -20,7 +20,7 @@
         #t_2_1.titulo-segundo.color-acento-contenido(data-aos="fade-right")
           h2 2.1 Instalación de UiPath Studio (versión vigente)
       p(data-aos="fade-left") Para comenzar el desarrollo de las automatizaciones, es necesario instalar <b>UiPath Studio</b>, entorno desde el cual se diseñarán posteriormente los flujos de trabajo.
-      p(data-aos="fade-left") El procedimiento de instalación comienza con el acceso a la plataforma de <b>UiPath</b> y la creación o utilización de una cuenta. A partir de esta cuenta se ingresa a <b>UiPath Automation Cloud</b>, desde donde se obtiene el instalador de Studio. Para completar este proceso, se deben seguir los siguientes pasos:
+      p(data-aos="fade-left") El procedimiento de instalación comienza con el acceso a la plataforma de <b>UiPath</b> y la creación o utilización de una cuenta. A partir de esta cuenta se ingresa a <b>UiPath <i>Automation Cloud</i></b>, desde donde se obtiene el instalador de Studio. Para completar este proceso, se deben seguir los siguientes pasos:
       .row.bg-fondo-2(data-aos="fade-right")
         .col-12
           .pt-3.pb-5.px-5      
@@ -69,7 +69,7 @@
                         img(src='@/assets/curso/temas/t2/tarjeta01_6.svg').img125
                     .col-12.col-lg.text-start
                       h4 Paso 6. Seleccionar la licencia
-                      p Durante la instalación, seleccionar la <i>modalidad Community License</i>, utilizada para el proceso de aprendizaje y práctica.
+                      p Durante la instalación, seleccionar la modalidad <i>Community License</i>, utilizada para el proceso de aprendizaje y práctica.
                   .row.align-items-center
                     .col-12.col-lg
                       h4 Paso 7. Seleccionar UiPath Studio
@@ -204,7 +204,7 @@
                     img(src='@/assets/curso/temas/t2/tarjeta03_2.png', alt='Captura de pantalla de UiPath Automation Cloud correspondiente al Resource Center, donde se encuentra la edición Community y la opción de descarga necesaria para obtener UiPath Studio. ', style="width: 100%;").mx-auto
               .col-lg-5.order-1.mb-3.mb-lg-0
                 h4 Descarga de UiPath Studio
-                p Desde el Resource Center de UiPath Automation Cloud es posible acceder a los recursos de instalación y realizar la descarga de UiPath Studio, herramienta utilizada para diseñar, configurar y ejecutar procesos automatizados.
+                p Desde el Resource Center de UiPath <i>Automation Cloud</i> es posible acceder a los recursos de instalación y realizar la descarga de UiPath Studio, herramienta utilizada para diseñar, configurar y ejecutar procesos automatizados.
             .row.align-items-center.p-4.p-md-5
               .col-lg-7.order-2
                 .row.justify-content-center.mb-5(data-aos="fade-right")
@@ -216,7 +216,7 @@
                     img(src='@/assets/curso/temas/t2/tarjeta03_3.png', alt='Captura de pantalla del proceso de instalación de UiPath con las opciones relacionadas con la licencia Community y el perfil UiPath Studio, utilizados para configurar el entorno de desarrollo de automatizaciones. ', style="width: 100%;").mx-auto
               .col-lg-5.order-1.mb-3.mb-lg-0
                 h4 Configuración de la licencia y el perfil
-                p Durante la configuración inicial se selecciona la licencia Community y el perfil UiPath Studio, opciones que permiten disponer de un entorno adecuado para el aprendizaje, la práctica y el desarrollo de proyectos de automatización.
+                p Durante la configuración inicial, se selecciona la licencia Community y el perfil UiPath Studio, opciones que permiten disponer de un entorno adecuado para el aprendizaje, la práctica y el desarrollo de proyectos de automatización.
       //- Fin Slideshow
       Separador
       //- Inicio Tema2.2
@@ -229,10 +229,10 @@
             img.mx-auto(src='@/assets/curso/temas/t2/img4.png', alt='', style="width: 500px;")
         .col-12.col-lg-8.order-2.order-lg-1.bg-color-4.p-4(data-aos="fade-left")
           p El <i>workflow</i> o <b>flujo de trabajo</b> es el espacio de <b>UiPath Studio</b> en el que se construye una automatización mediante la incorporación y organización de actividades. UiPath Studio permite crear proyectos, diseñar los flujos de trabajo y acceder a diferentes herramientas para configurar, administrar y revisar los elementos que forman parte de la automatización.
-          p.mb-0 Desde la pantalla de inicio de <b>UiPath Studio</b> se pueden crear diferentes tipos de proyectos. Entre las opciones disponibles se encuentran <b>Proceso, Biblioteca, Prueba de automatización y Plantilla.</b> Para desarrollar el caso práctico se selecciona <b>Proceso</b>, opción que permite comenzar un nuevo proyecto destinado al diseño de una automatización.
-      p(data-aos="fade-left") Al seleccionar <b>Proceso</b>, Studio presenta el formulario de creación del proyecto, en el que se configuran datos como el <b>nombre, la descripción, la ubicación, la compatibilidad y el idioma</b>. Para el caso práctico se crea el proyecto denominado <b>cambiomoneda</b> y, posteriormente, se selecciona <b>Crear</b>.
+          p.mb-0 Desde la pantalla de inicio de <b>UiPath Studio</b> se pueden crear diferentes tipos de proyectos. Entre las opciones disponibles se encuentran <b>Proceso, Biblioteca, Prueba de automatización y Plantilla.</b> Para desarrollar el caso práctico, se selecciona <b>Proceso</b>, opción que permite comenzar un nuevo proyecto destinado al diseño de una automatización.
+      p(data-aos="fade-left") Al seleccionar <b>Proceso</b>, Studio presenta el formulario de creación del proyecto, en el que se configuran datos como el <b>nombre, la descripción, la ubicación, la compatibilidad y el idioma</b>. Para el caso práctico, se crea el proyecto denominado <b>cambiomoneda</b> y, posteriormente, se selecciona <b>Crear</b>.
       p(data-aos="fade-left") Una vez creado el proyecto, <b>UiPath Studio</b> presenta el entorno de diseño. En el panel <b>Explorar</b> se puede consultar la estructura del proyecto, en la que se encuentran elementos como <b>Dependencias, Entidades, Plantillas, Main.xaml y project.json.</b> El archivo <b>Main.xaml</b> corresponde al <i>workflow</i> principal del proyecto.
-      p(data-aos="fade-left") En el área central del entorno de diseño se encuentra <b>Main Sequence</b>, estructura inicial en la que se incorporan las actividades que formarán parte de la automatización.
+      p(data-aos="fade-left") En el área central del entorno de diseño se encuentra <b><i>Main Sequence</i></b>, estructura inicial en la que se incorporan las actividades que formarán parte de la automatización.
       //- Título nivel 3 - Imagen
       .titulo-tercer-nivel.mb-5.mt-3(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/titulos.svg')
@@ -246,33 +246,33 @@
               img(src="@/assets/curso/temas/t2/img5.png", alt="").img400.m-auto
           .col-lg-9
             AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta acordeonA")
-              .row(titulo="Explorar / Project")
+              .row(titulo="Explorar / <i>Project</i>")
                 p.mb-4 Permite consultar la estructura del proyecto y acceder a sus elementos, como Main.xaml, project.json y las dependencias. Facilita la navegación entre los componentes que conforman la automatización.
-              .row(titulo="Designer")
-                p.mb-4 Corresponde al área central en la que se construye el <i>workflow</i>. En el proyecto se presenta inicialmente <b>Main Sequence</b>, estructura en la que se incorporan y organizan las actividades.
-              .row(titulo="Properties / Propiedades")
+              .row(titulo="<i>Designer")
+                p.mb-4 Corresponde al área central en la que se construye el <i>workflow</i>. En el proyecto se presenta inicialmente <b><i>Main Sequence</i></b>, estructura en la que se incorporan y organizan las actividades.
+              .row(titulo="<i>Properties</i> / Propiedades")
                 p.mb-4 Permite consultar y modificar las propiedades del elemento seleccionado. Desde este panel se configuran los parámetros asociados con las actividades y demás componentes del proyecto.
-              .row(titulo="Data Manager / Gestor de datos")
+              .row(titulo="<i>Data </i> / Gestor de datos")
                 p.mb-4 Permite consultar y administrar los elementos de datos del proyecto, entre ellos <b>variables, argumentos, espacios de nombres y conexiones</b>. Estos elementos apoyan el manejo de la información dentro del flujo de trabajo.
-              .row(titulo="Output / Salida")
+              .row(titulo="<i>Output</i> / Salida")
                 p.mb-4 Permite consultar la información generada durante la ejecución del proyecto. Este panel facilita el seguimiento del comportamiento de la automatización durante las pruebas.
-              .row(titulo="Error List / Errores")
+              .row(titulo="<i>Error List</i> / Errores")
                 p.mb-4 Permite consultar los errores identificados durante el desarrollo y la validación del proyecto. Su uso contribuye a localizar situaciones que deben corregirse antes de ejecutar la automatización.
-              .row(titulo="Command Palette")
+              .row(titulo="<i>Command Palette</i>")
                 p.mb-4 Permite buscar rápidamente comandos y actividades disponibles en <b>UiPath Studio</b>. Facilita la incorporación de elementos al flujo de trabajo sin recorrer los diferentes menús del entorno.
       //- Fin Accordion 1
       p(data-aos="fade-left") Estos componentes permiten trabajar de manera integrada con la estructura, los datos, las actividades y la validación del proyecto.
       //- Título nivel 3 - Imagen
       .titulo-tercer-nivel.mb-5.mt-3(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/titulos.svg')
-        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 Command Palette
+        h3.titulo-tercer-nivel__text.mb-0.px-0.py-2 <i>Command Palette</i>
       //- Título nivel 3 - Imagen
       .row.justify-content-center.align-items-center.mb-3
         .col-12.col-sm-9.col-lg-4.order-1.order-lg-2.mb-4.mb-lg-0(data-aos="fade-right")
           figure.mb-0.text-center
             img.mx-auto(src='@/assets/curso/temas/t2/img6.png', alt='', style="width: 350px;")
         .col-12.col-lg-8.order-2.order-lg-1.bg-color-4.p-4(data-aos="fade-left")
-          p La <b>Command Palette</b> permite localizar rápidamente comandos y actividades disponibles en <b>UiPath Studio</b>. En el recurso se utiliza el buscador para localizar actividades y se incluyen opciones como <b>Bandeja de mensajes, Secuencia, Extraer texto, Asignar, If, For Each, Do While y While</b>, entre otras.
+          p La <b><i>Command Palette</i></b> permite localizar rápidamente comandos y actividades disponibles en <b>UiPath Studio</b>. En el recurso se utiliza el buscador para localizar actividades y se incluyen opciones como <b>Bandeja de mensajes, Secuencia, Extraer texto, Asignar, If, For Each, Do While y While</b>, entre otras.
           p.mb-0 Esta herramienta facilita la incorporación de elementos al <i>workflow</i> y agiliza la búsqueda de las actividades necesarias para construir la automatización.
       //- Título nivel 3 - Imagen
       .titulo-tercer-nivel.mb-5.mt-3(data-aos="fade-right")
@@ -319,7 +319,7 @@
                             h4.card-title.text-center.mb-3.fw-bold Plantilla
                             p.text-start Permite crear una estructura reutilizable para iniciar otros proyectos de automatización. Facilita el uso de una configuración base que puede adaptarse a distintos desarrollos.
             //- Fin Carrusel
-            p(data-aos="fade-left") Para el desarrollo del caso práctico se selecciona <b>Proceso</b>, debido a que esta opción permite construir la automatización que se desarrollará durante el componente.
+            p(data-aos="fade-left") Para el desarrollo del caso práctico, se selecciona <b>Proceso</b>, debido a que esta opción permite construir la automatización que se desarrollará durante el componente.
       //- Título nivel 3 - Imagen
       .titulo-tercer-nivel.mb-5.mt-3(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/titulos.svg')
@@ -343,10 +343,10 @@
           .bg-color-3.p-4.rounded-0.h-100.d-flex.align-items-center.justify-content-center.text-center
             p.mb-0.fw-bold project.json
       p(data-aos="fade-left") Esta estructura organiza los archivos y componentes principales que forman parte del proyecto.
-      p(data-aos="fade-left") Al abrir <b>Main.xaml</b>, el diseñador contiene inicialmente los siguientes elementos: <b>Main. Main Sequence.</b>
+      p(data-aos="fade-left") Al abrir <b>Main.xaml</b>, el diseñador contiene inicialmente los siguientes elementos: <b><i>Main. Main Sequence.</i></b>
       .row.justify-content-center(data-aos="fade-right")
         .col-lg-8.bg-color-4.p-4
-          p La <b>Main Sequence</b> constituye el espacio inicial en el que se incorporarán las actividades que conformarán posteriormente la automatización.
+          p La <b><i>Main Sequence</i></b> constituye el espacio inicial en el que se incorporarán las actividades que conformarán posteriormente la automatización.
       //- Título nivel 3 - Imagen
       .titulo-tercer-nivel.mb-5.mt-3(data-aos="fade-right")
         img.titulo-tercer-nivel__icon(src='@/assets/curso/temas/bg/titulos.svg')
@@ -363,7 +363,7 @@
         .col-md-auto.col-lg-10
           .titulo-sexto.color-acento-contenido.mb-3
             h5 Figura 5.
-            span  Interfaz de UiPath Studio en su versión vigente, con la cinta compacta y la Command Palette.
+            span  Interfaz de UiPath Studio en su versión vigente, con la cinta compacta y la <i>Command Palette</i>.
         figure.mb-0.text-center
             img.mx-auto(src='@/assets/curso/temas/t2/img8.png', alt='Captura de pantalla de la interfaz de UiPath Studio con el explorador del proyecto, el área de diseño, el panel de propiedades, el gestor de datos y la Command Palette, componentes utilizados para construir, configurar y administrar un flujo de automatización. ', style="width: 1000px;")
       .row.justify-content-center.mb-5(data-aos="fade-right")
@@ -523,7 +523,7 @@
           figure.mb-0.text-center
             img.mx-auto(src='@/assets/curso/temas/t2/img13.png', alt='', style="width: 500px;")
         .col-12.col-lg-8.order-2.order-lg-1.bg-color-4.p-4(data-aos="fade-left")
-          p Las <b>estructuras de control de flujo</b> permiten dirigir el orden en que se ejecutan las actividades de una automatización, tomar decisiones y repetir acciones según las condiciones definidas. Entre las estructuras disponibles en <b>UiPath</b> se encuentran las secuncias, los condicionales y los ciclos.
+          p Las <b>estructuras de control de flujo</b> permiten dirigir el orden en que se ejecutan las actividades de una automatización, tomar decisiones y repetir acciones según las condiciones definidas. Entre las estructuras disponibles en <b>UiPath</b> se encuentran las secuencias, los condicionales y los ciclos.
           p.mb-0 En el caso de estudio se utilizan principalmente las estructuras <b>If y For Each</b>, que permiten validar el resultado obtenido y procesar diferentes valores de conversión de manera repetitiva. Las principales estructuras de control y sus aplicaciones se describen a continuación:
       //- Inicio Accordion 1
       .bg--img_03.mt-5
@@ -579,7 +579,7 @@
             .row.justify-content-center.text-center.text-white.mb-5(data-aos="fade-right")
               .col-lg-4.bg-color-9.p-4
                 p.fw-bold resultado <> ""
-            p(data-aos="fade-left") Esta condición comprueba que <b>resultado</b> sea diferente de una cadena vacía. Cuando la condición es verdadera, se puede presentar o registrar el resultado obtenido. Si la condición es falsa, se puede generar un mensaje que indique que no fue posible obtener el resultado.
+            p(data-aos="fade-left") Esta condición comprueba que <b>el resultado</b> sea diferente de una cadena vacía. Cuando la condición es verdadera, se puede presentar o registrar el resultado obtenido. Si la condición es falsa, se puede generar un mensaje que indique que no fue posible obtener el resultado.
             p(data-aos="fade-left") De esta manera, <b>If</b> permite tomar una decisión dentro del flujo a partir del contenido almacenado en la variable.
       .row.justify-content-center.mb-5(data-aos="fade-right")
         .col-md-auto.col-lg-5
@@ -655,7 +655,7 @@
               .row(titulo="Reglas")
                 p.mb-4 Para cada monto de la colección, el robot debe ingresarlo en el campo Amount, seleccionar la moneda de origen y la moneda de destino, ejecutar la conversión y obtener el resultado generado por la aplicación.
               .row(titulo="Salidas")
-                p.mb-4 Corresponden al resultado de cada conversión almacenado en la variable resultado, presentado mediante una Bandeja de mensajes y registrado posteriormente en el archivo de Excel.
+                p.mb-4 Corresponden al resultado de cada conversión almacenado en la variable resultado, presentado mediante una bandeja de mensajes y registrado posteriormente en el archivo de Excel.
               .row(titulo="Excepciones")
                 p.mb-4 Pueden presentarse cuando la aplicación <i>web</i> no carga, un elemento de la interfaz no está disponible, no se obtiene el texto del resultado o el archivo de Excel no puede utilizarse correctamente.
       //- Fin Accordion 1      
@@ -710,7 +710,7 @@
               .row(titulo="Preparar la aplicación web")
                 p.mb-4 Abrir la aplicación <i>web</i> de conversión de monedas y comprobar que los elementos necesarios para la interacción puedan ser identificados desde <b>UiPath Studio</b>.
               .row(titulo="Crear el ciclo For Each")
-                p.mb-4 Incorporar una estructura <b>For Each</b> para recorrer la colección de montos que serán procesados. Para el caso práctico se utiliza una colección como New String() {"1000","5000","10000"}.
+                p.mb-4 Incorporar una estructura <b>For Each</b> para recorrer la colección de montos que serán procesados. Para el caso práctico, se utiliza una colección como New String() {"1000","5000","10000"}.
               .row(titulo="Configurar currentItem")
                 p.mb-4 Establecer la variable <b>currentItem</b> como elemento actual del ciclo <b>For Each</b>. En cada iteración, esta variable contiene el monto que será ingresado en la aplicación web.
               .row(titulo="Ingresar el monto")
@@ -914,7 +914,7 @@
               img.w-100(src='@/assets/curso/temas/t2/tarjeta11_2.png' alt="")
             .p-3.p-md-4.flex-grow-1
               h4.text-center Análisis de valores límite
-              p.mb-0 Se concentra en los extremos de los rangos o condiciones definidas, debido a que estos puntos pueden presentar una mayor probabilidad de errores. En el caso de estudio puede aplicarse a la primera ejecución del día y a una ejecución cuando el archivo de control ya contiene registros.
+              p.mb-0 Se concentra en los extremos de los rangos o condiciones definidas, debido a que estos puntos pueden presentar una mayor probabilidad de errores. En el caso de estudio, puede aplicarse a la primera ejecución del día y a una ejecución cuando el archivo de control ya contiene registros.
         .col-12.col-sm-6.col-lg-4.mb-4
           .tarjeta--boton.color-primario.rounded-0.overflow-hidden.h-100.d-flex.flex-column
             figure.mb-0
@@ -1043,7 +1043,7 @@
               img.mx-auto(src='@/assets/curso/temas/t2/tarjeta13_3.svg', alt='', style="width: 90px;")
             .flex-grow-1.d-flex.flex-column
               h4.mb-3.text-center Menor
-              p.mb-0 Afecta aspectos de presentación o registro sin comprometer el resultado principal del proceso. Puede documentarse y programarse para una versión posterior, de acuerdo con los criterios establecidos para la entrega.
+              p.mb-0 Afecta aspectos de presentación o de registro sin comprometer el resultado principal del proceso. Puede documentarse y programarse para una versión posterior, de acuerdo con los criterios establecidos para la entrega.
       //- Fin Tarjetas
       p(data-aos="fade-left") La severidad debe asignarse en función del impacto del defecto y no únicamente de la dificultad técnica necesaria para corregirlo.
       //- Título nivel 3 - Imagen

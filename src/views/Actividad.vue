@@ -114,7 +114,7 @@ export default {
             {
               id: 'c',
               texto:
-                'Automatización Robótica de Procesos mediante robots de software configurados.',
+                'Automatización Robótica de Procesos mediante robots de <i>software</i> configurados.',
               esCorrecta: true,
             },
             {
@@ -323,7 +323,7 @@ export default {
             {
               id: 'c',
               texto:
-                'Desde Main Sequence utilizando las herramientas disponibles para descargar nuevos proyectos.',
+                'Desde <i>Main Sequence</i> utilizando las herramientas disponibles para descargar nuevos proyectos.',
               esCorrecta: false,
             },
             {
